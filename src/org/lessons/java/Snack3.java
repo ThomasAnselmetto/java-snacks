@@ -5,18 +5,16 @@ package org.lessons.java;
 public class Snack3 {
     public static void main(String[] args) {
 
-        int[] mioArray = {1,2,3,4,5,6,7,8,9};
+        int[] mioArray = {0,0,0,4,5,6,7,8,9,10,1,5,5};
 
         int sommaDeiDispari = 0;
 
         for (int i = 0; i < mioArray.length; i++) {
-            if(mioArray[i] % 2 != 0){
-
+            if ((i + 1) % 2 != 0) {
                 sommaDeiDispari += mioArray[i];
             }
         }
-        System.out.println(sommaDeiDispari);
 
-
+        System.out.println("La somma degli elementi in posizione dispari è: " + sommaDeiDispari);
     }
 }
